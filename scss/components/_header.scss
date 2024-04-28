@@ -1,0 +1,18 @@
+.header {
+  background-color: var(--black);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+    outline: 1px solid brown;
+  }
+
+  &__basket {}
+}

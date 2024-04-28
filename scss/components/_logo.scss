@@ -1,0 +1,7 @@
+.logo {
+  @extend %Gilroy-700;
+  font-size: rem(28);
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: var(--white);
+}

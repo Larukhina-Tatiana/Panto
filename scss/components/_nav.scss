@@ -1,0 +1,17 @@
+.nav {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: rem(60);
+
+  }
+
+  &__link {
+    padding: rem(10) 0;
+    @extend %Gilroy-500;
+    font-size: rem(18);
+    color: var(--white);
+    text-transform: capitalize;
+  }
+}

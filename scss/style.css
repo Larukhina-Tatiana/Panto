@@ -1,0 +1,215 @@
+:root {
+  --gray-8: rgb(30, 30, 30, .8);
+  --gray-9: rgb(30, 30, 30, .9);
+  --black: #1e1e1e;
+  --white: #FFFFFF;
+  --white-rgba: rgb(255, 255, 255, .8);
+  --accent: #e58411;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--black);
+  overflow-x: hidden;
+  min-width: 100vw;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+::marker {
+  margin-top: 10px;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+.main {
+  overflow-x: clip;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url(../fonts/Gilroy-Regular.woff2) format("woff2"), url(../fonts/Gilroy-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(../fonts/Inter-Regular.woff2) format("woff2"), url(../fonts/Inter-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DMSans", sans-serif;
+  src: url(../fonts/DMSans-Regular.woff2) format("woff2"), url(../fonts/DMSans-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Medium.woff2) format("woff2"), url(../fonts/Gilroy-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.nav__link {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(../fonts/Inter-SemiBold.woff2) format("woff2"), url(../fonts/Inter-SemiBold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url(../fonts/Gilroy-SemiBold.woff2) format("woff2"), url(../fonts/Gilroy-SemiBold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Bold.woff2) format("woff2"), url(../fonts/Gilroy-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.logo {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+}
+
+.header {
+  background-color: var(--black);
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 1px solid brown;
+}
+.logo {
+  font-size: 1.75rem;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: var(--white);
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 3.75rem;
+}
+.nav__link {
+  padding: 0.625rem 0;
+  font-size: 1.125rem;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.sl-wrapper .sl-counter {
+  top: 100px;
+}
+
+.sl-wrapper .sl-close {
+  top: 110px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+:root {
+    --gray-8: rgb(30, 30, 30, .8);
+    --gray-9: rgb(30, 30, 30, .9);
+    --black: #1e1e1e;
+    --white: #FFFFFF;
+    --white-rgba: rgb(255, 255, 255, .8);
+    --accent: #e58411;
+
+
+    // --font-family: @extend %Gilroy-500;
+    // --second-family: @extend %Gilroy-400;
+    // --third-family: @extend %Inter-400;
+    // --font3: @extend %Gilroy-700;
+    // --font4: @extend %DMSans-400;
+    // --font5: @extend %Gilroy-600;
+}
+
+
+
+@mixin transition ($transition-property: color, $transition-duration: 550ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+}
+
+// @include transition ($transition-property: color);
+
+
+
+
+// <svg class="projects__item-svg" width="30" height="30" aria-label="РРєРѕРЅРєР° РїРѕРёСЃРєР°">
+// <use href="./images/projects/icons.svg#icon-search"></use>
+// </svg>
+
+
+//  Линия под заголовками
+//  padding-bottom: 23px;
+// margin-bottom: 23px;
+// position: relative;
+
+// &::after {
+//   position: absolute;
+//   content: '';
+//   width: 200px;
+//   height: 1px;
+//   left: calc(50% - 100px);
+//   bottom: 0;
+//   background-color: #6D7278;
+//   border: 1px solid var(--line);
+//   border-radius: 0.5px;
+// }
+// }
+
+// @extend %title-font;
+//       box-shadow: -3px -3px 49px rgb(10 1 1 / 4%), 3px 10px 36px rgb(0 0 0 / 10%);
+// margin-left: calc(20px + (182 - 20) * ((100vw - 300px)/ (1200 - 300)));
+// font-size: calc(10px + (20 - 10) * ((100vw - 300px)/ (1200 - 300)));
