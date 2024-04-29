@@ -3,5 +3,12 @@
   font-size: rem(28);
   letter-spacing: 0.01em;
   text-transform: capitalize;
-  color: var(--white);
+
+  &--white {
+    color: var(--white);
+  }
+
+  &--black {
+    color: var(--black);
+  }
 }

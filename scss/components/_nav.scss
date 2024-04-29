@@ -13,5 +13,23 @@
     font-size: rem(18);
     color: var(--white);
     text-transform: capitalize;
+
+    @include transition ($transition-property: color);
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--accent);
+
+        &-svg {
+          color: var(--accent);
+        }
+      }
+    }
+
+    &--flex {
+      display: flex;
+      align-items: center;
+      gap: rem(10);
+    }
   }
 }

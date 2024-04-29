@@ -1,12 +1,16 @@
 @import "./utils/_vars";
 @import "./utils/_global";
 @import "./utils/_fonts";
-// @import "./components/_container";
+@import "./utils/_container";
 @import "./components/_header";
 @import "./components/_logo";
 @import "./components/_nav";
 // @import "./components/_wrapper";
-// @import "./components/_hero";
+@import "./components/_hero";
+@import "./components/_search";
+@import "./components/choosingus";
+@import "./components/titles";
+@import "./components/link-more";
 // @import "./components/_swiper";
 // @import "./components/swiper-pagination-bullet";
 // @import "./components/_advantages";
