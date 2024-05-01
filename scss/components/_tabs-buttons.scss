@@ -1,0 +1,52 @@
+.tabs-buttons {
+
+  max-width: rem(348);
+  display: flex;
+  align-items: center;
+  border-radius: rem(44);
+  padding: rem(6);
+  background: #eee;
+  margin: 0 auto rem(80);
+
+  &__btn {
+    @extend %Gilroy-400;
+    font-size: rem(18);
+    line-height: 1.85;
+    color: var(--gray-8);
+    padding: rem(4);
+    width: rem(84);
+    height: rem(45);
+    // @include transition ($transition-property: (color, font-size));
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+}
+
+.tabs__link--active {
+  @extend %Gilroy-500;
+  background-color: var(--white);
+  border-radius: rem(32);
+}
+
+.tabs__content-item {
+  display: none;
+  animation: opac 1.30s;
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.tabs__content-item.tabs__content--active {
+  display: block;
+}

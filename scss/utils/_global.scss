@@ -36,7 +36,7 @@ ul[class] {
 }
 
 img {
-    width: 100%;
+    // width: 100%;
     display: block;
 }
 
@@ -178,4 +178,36 @@ button,
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+.swiper-button-right,
+.swiper-button-left {
+    background-color: var(--white);
+    border-radius: 50%;
+    width: rem(50);
+    height: rem(50);
+    z-index: 3;
+    position: absolute;
+    top: 36%;
+    overflow: visible;
+    @include transition ($transition-property: scale);
+
+    @media (any-hover: hover) {
+        &:hover {
+            scale: 1.2;
+
+            .bestproduct__button-svg {
+                color: var(--accent);
+            }
+        }
+    }
+}
+
+.swiper-button-right {
+    left: rem(5);
+
+}
+
+.swiper-button-left {
+    right: rem(4);
 }

@@ -5,6 +5,7 @@
     --white: #FFFFFF;
     --white-rgba: rgb(255, 255, 255, .8);
     --accent: #e58411;
+    --background: #f7f7f7;
 
 
     // --font-family: @extend %Gilroy-500;
@@ -17,7 +18,7 @@
 
 
 
-@mixin transition ($transition-property: color, $transition-duration: 250ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+@mixin transition ($transition-property: color, $transition-duration: 150ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
     transition-duration: $transition-duration;
     transition-timing-function: $transition-timing-function;
 }

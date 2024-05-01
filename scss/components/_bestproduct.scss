@@ -1,0 +1,27 @@
+.bestproduct {
+  background-color: var(--background);
+  text-align: center;
+  padding-bottom: rem(50);
+
+  &__title {
+    margin-bottom: rem(32);
+  }
+
+  &__list {
+    max-width: rem(1230);
+    margin: 0 auto rem(60);
+  }
+
+  &__item {
+    min-height: rem(492);
+    // outline: rem(1) solid green;
+    position: relative;
+  }
+
+  &__link {
+    display: inline-flex;
+    font-size: rem(18);
+    line-height: 1.85;
+  }
+
+}

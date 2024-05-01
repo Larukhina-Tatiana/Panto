@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panto</title>
   <link rel="stylesheet" href="scss/modern-normalize.min.css">
-  <link rel="stylesheet" href="./js/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swip?er@9/swiper-bundle.min.css"> -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="scss/style.css">
 </head>
 
@@ -55,7 +57,7 @@
     </div>
   </header>
   <main class="main">
-    <!-- <section class="hero" style="background-image:
+    <section class="hero" style="background-image:
                 linear-gradient(180.00deg, rgba(255, 255, 255, 0) 86.133%, rgb(255, 255, 255) 100%),
                 -webkit-image-set(
             url(./images/hero/hero@1x.avif) type('image/avif') 1x,
@@ -98,37 +100,1298 @@
             </div>
           </form>
         </div>
-      </div> 
-    </section>-->
-    <section class="choosingus container">
-      <div class="choosingus__inner">
-        <h2 class="choosingus__title section-title">Why Choosing Us</h2>
-        <ul class="choosingus__list">
-          <li class="choosingus__item">
-            <h3 class="choosingus__item-title">Luxury facilities</h3>
-            <p class="choosingus__item-text">
-              The advantage of hiring a workspace with us is that givees you comfortable service and all-around
-              facilities.
-            </p>
-            <a class="link-more" href="">More Info</a>
-          </li>
-          <li class="choosingus__item">
-            <h3 class="choosingus__item-title">Affordable Price</h3>
-            <p class="choosingus__item-text">
-              You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that
-              are oly here.
-            </p>
-            <a class="link-more" href="">More Info</a>
-          </li>
-          <li class="choosingus__item">
-            <h3 class="choosingus__item-title">Many Choices</h3>
-            <p class="choosingus__item-text">
-              We provide many unique work space choices so that you can choose the workspace to your liking.
-            </p>
-            <a class="link-more" href="">More Info</a>
-          </li>
-        </ul>
       </div>
+    </section>
+    <section class="choosingus">
+      <div class="container">
+        <div class="choosingus__inner">
+          <h2 class="choosingus__title section-title">Why Choosing Us</h2>
+          <ul class="choosingus__list">
+            <li class="choosingus__item">
+              <h3 class="choosingus__item-title">Luxury facilities</h3>
+              <p class="choosingus__item-text">
+                The advantage of hiring a workspace with us is that givees you comfortable service and all-around
+                facilities.
+              </p>
+              <a class="link-more" href="">More Info</a>
+            </li>
+            <li class="choosingus__item">
+              <h3 class="choosingus__item-title">Affordable Price</h3>
+              <p class="choosingus__item-text">
+                You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that
+                are oly here.
+              </p>
+              <a class="link-more" href="">More Info</a>
+            </li>
+            <li class="choosingus__item">
+              <h3 class="choosingus__item-title">Many Choices</h3>
+              <p class="choosingus__item-text">
+                We provide many unique work space choices so that you can choose the workspace to your liking.
+              </p>
+              <a class="link-more" href="">More Info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="bestproduct aos-init aos-animate" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000">
+      <ul class="container">
+        <h2 class="bestproduct__title section-title">Best Selling Product</h2>
+
+
+
+        <ul class="tabs-buttons tabs-wrapper">
+          <a class="tabs-buttons__btn tabs__link tabs__link--active" href="#products-chair">Chair</a>
+          <a class="tabs-buttons__btn tabs__link" href="#products-beds">Beds</a>
+          <a class="tabs-buttons__btn tabs__link" href="#products-sofa">Sofa</a>
+          <a class="tabs-buttons__btn tabs__link" href="#products-lamp">Lamp</a>
+        </ul>
+
+
+        <ul class="bestproduct__inner tabs__content">
+          <li class="bestproduct__list tabs__content-item tabs__content--active" id="products-chair">
+            <ul class="bestproduct__slider">
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                    ./images/card-product/card-product1@1x.png 1x,
+                    ./images/card-product/card-product1@2x.png 2x" loading="lazy" decoding="async"
+                        alt="sakarias-armchair-black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title" title="Sakarias Armchair">Sakarias Armchair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>392</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                    ./images/card-product/card-product2@1x.png 1x,
+                    ./images/card-product/card-product2@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Baltsar Chair -black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Baltsar Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>299</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                    ./images/card-product/card-product3@1x.png 1x,
+                    ./images/card-product/card-product3@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Anjay Chair black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Anjay Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>519</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                    ./images/card-product/card-product4@1x.png 1x,
+                    ./images/card-product/card-product4@2x.png 2x" loading="lazy" decoding="async" alt="Nyantuy Chair"
+                        width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Nyantuy Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>921</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+
+
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product1@1x.png 1x,
+                                ./images/card-product/card-product1@2x.png 2x" loading="lazy" decoding="async"
+                        alt="sakarias-armchair-black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Sakarias Armchair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>392</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product2@1x.png 1x,
+                                ./images/card-product/card-product2@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Baltsar Chair -black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Baltsar Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>299</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product3@1x.png 1x,
+                                ./images/card-product/card-product3@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Anjay Chair black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Anjay Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>519</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product4@1x.png 1x,
+                                ./images/card-product/card-product4@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Nyantuy Chair" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Nyantuy Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>921</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </li>
+          <li class="bestproduct__list tabs__content-item" id="products-beds">
+            <ul class="bestproduct__slider">
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product1@1x.png 1x,
+                                ./images/card-product/card-product1@2x.png 2x" loading="lazy" decoding="async"
+                        alt="sakarias-armchair-black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title" title="Sakarias Armchair">Sakarias Armchair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>392</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product2@1x.png 1x,
+                                ./images/card-product/card-product2@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Baltsar Chair -black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Baltsar Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>299</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product3@1x.png 1x,
+                                ./images/card-product/card-product3@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Anjay Chair black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Anjay Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>519</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product4@1x.png 1x,
+                                ./images/card-product/card-product4@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Nyantuy Chair" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Nyantuy Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>921</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+
+
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                            ./images/card-product/card-product1@1x.png 1x,
+                                            ./images/card-product/card-product1@2x.png 2x" loading="lazy"
+                        decoding="async" alt="sakarias-armchair-black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Sakarias Armchair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>392</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                            ./images/card-product/card-product2@1x.png 1x,
+                                            ./images/card-product/card-product2@2x.png 2x" loading="lazy"
+                        decoding="async" alt="Baltsar Chair -black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Baltsar Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>299</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                            ./images/card-product/card-product3@1x.png 1x,
+                                            ./images/card-product/card-product3@2x.png 2x" loading="lazy"
+                        decoding="async" alt="Anjay Chair black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Anjay Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>519</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                            ./images/card-product/card-product4@1x.png 1x,
+                                            ./images/card-product/card-product4@2x.png 2x" loading="lazy"
+                        decoding="async" alt="Nyantuy Chair" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Nyantuy Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>921</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </li>
+          <li class="bestproduct__list tabs__content-item" id="products-sofa">
+            <ul class="bestproduct__slider">
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product1@1x.png 1x,
+                                ./images/card-product/card-product1@2x.png 2x" loading="lazy" decoding="async"
+                        alt="sakarias-armchair-black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title" title="Sakarias Armchair">Sakarias Armchair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>392</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product2@1x.png 1x,
+                                ./images/card-product/card-product2@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Baltsar Chair -black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Baltsar Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>299</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product3@1x.png 1x,
+                                ./images/card-product/card-product3@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Anjay Chair black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Anjay Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>519</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product4@1x.png 1x,
+                                ./images/card-product/card-product4@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Nyantuy Chair" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Nyantuy Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>921</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+
+
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                            ./images/card-product/card-product1@1x.png 1x,
+                                            ./images/card-product/card-product1@2x.png 2x" loading="lazy"
+                        decoding="async" alt="sakarias-armchair-black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Sakarias Armchair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>392</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                            ./images/card-product/card-product2@1x.png 1x,
+                                            ./images/card-product/card-product2@2x.png 2x" loading="lazy"
+                        decoding="async" alt="Baltsar Chair -black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Baltsar Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>299</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                            ./images/card-product/card-product3@1x.png 1x,
+                                            ./images/card-product/card-product3@2x.png 2x" loading="lazy"
+                        decoding="async" alt="Anjay Chair black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Anjay Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>519</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                            ./images/card-product/card-product4@1x.png 1x,
+                                            ./images/card-product/card-product4@2x.png 2x" loading="lazy"
+                        decoding="async" alt="Nyantuy Chair" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Nyantuy Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>921</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </li>
+          <li class="bestproduct__list tabs__content-item" id="products-lamp">
+            <ul class="bestproduct__slider">
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product1@1x.png 1x,
+                                ./images/card-product/card-product1@2x.png 2x" loading="lazy" decoding="async"
+                        alt="sakarias-armchair-black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title" title="Sakarias Armchair">Sakarias Armchair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>392</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product2@1x.png 1x,
+                                ./images/card-product/card-product2@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Baltsar Chair -black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Baltsar Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>299</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product3@1x.png 1x,
+                                ./images/card-product/card-product3@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Anjay Chair black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Anjay Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>519</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                ./images/card-product/card-product4@1x.png 1x,
+                                ./images/card-product/card-product4@2x.png 2x" loading="lazy" decoding="async"
+                        alt="Nyantuy Chair" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Nyantuy Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>921</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+
+
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                            ./images/card-product/card-product1@1x.png 1x,
+                                            ./images/card-product/card-product1@2x.png 2x" loading="lazy"
+                        decoding="async" alt="sakarias-armchair-black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Sakarias Armchair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>392</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                            ./images/card-product/card-product2@1x.png 1x,
+                                            ./images/card-product/card-product2@2x.png 2x" loading="lazy"
+                        decoding="async" alt="Baltsar Chair -black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Baltsar Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>299</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                            ./images/card-product/card-product3@1x.png 1x,
+                                            ./images/card-product/card-product3@2x.png 2x" loading="lazy"
+                        decoding="async" alt="Anjay Chair black-sporda-dark-gray" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Anjay Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>519</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="bestproduct__item">
+                <article class="card-product">
+                  <a class="card-product__link" href="">
+                    <div class="card-product__thumb">
+                      <img class="card-product__img" src="image/png" srcset="
+                                            ./images/card-product/card-product4@1x.png 1x,
+                                            ./images/card-product/card-product4@2x.png 2x" loading="lazy"
+                        decoding="async" alt="Nyantuy Chair" width="217">
+                    </div>
+                    <div class="card-product__body">
+                      <p class="card-product__name">Chair</p>
+                      <h4 class="card-product__title">Nyantuy Chair</h4>
+
+                      <ul class="card-product__rating rating">
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                        <li class="rating__item">
+                          <img src="./images/icons/star.svg" alt="icon star">
+                        </li>
+                      </ul>
+                      <div class="card-product__price-inner">
+                        <p class="card-product__price"><sup class="card-product__sup">$</sup>921</p>
+                        <button class="card-product__btnbasket"></button>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </li>
+          <a class="bestproduct__link link-more" href="">View All</a>
+        </ul>
     </section>
 
 
@@ -138,8 +1401,13 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
+  <!-- <script src="libs/mixitup-v3/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script> -->
+  <!-- <script src="js/swiper-bundle.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+  <script src="libs/slick/slick.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script src="js/main.js"></script>
 </body>
 
