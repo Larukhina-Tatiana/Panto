@@ -1,0 +1,23 @@
+.experiences {
+  padding: rem(240) 0;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: rem(80);
+  }
+
+
+  &__description {
+    max-width: rem(556);
+  }
+
+  &__title {
+    max-width: rem(413);
+    margin-bottom: rem(20);
+  }
+
+  &__descr {
+    margin-bottom: rem(24);
+  }
+}

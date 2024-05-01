@@ -203,6 +203,11 @@ button,
   font-style: normal;
   font-display: swap;
 }
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
 @font-face {
   font-family: "Gilroy";
   src: url(../fonts/Gilroy-Bold.woff2) format("woff2"), url(../fonts/Gilroy-Bold.woff) format("woff");
@@ -460,6 +465,16 @@ button,
 .section-title {
   font-size: 2.625rem;
   color: var(--black);
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
 }
 
 .link-more {
@@ -655,10 +670,21 @@ button,
   gap: 0.25rem;
 }
 
-.sl-wrapper .sl-counter {
-  top: 100px;
+.experiences {
+  padding: 15rem 0;
 }
-
-.sl-wrapper .sl-close {
-  top: 110px;
+.experiences__box {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.experiences__description {
+  max-width: 34.75rem;
+}
+.experiences__title {
+  max-width: 25.8125rem;
+  margin-bottom: 1.25rem;
+}
+.experiences__descr {
+  margin-bottom: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

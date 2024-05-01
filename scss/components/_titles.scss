@@ -2,4 +2,15 @@
   @extend %Gilroy-700;
   font-size: rem(42);
   color: var(--black);
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  @extend %Gilroy-600;
+  font-size: rem(18);
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: rem(20);
 }
