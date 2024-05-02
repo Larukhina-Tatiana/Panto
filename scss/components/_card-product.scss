@@ -55,17 +55,21 @@
 
   &__name {
     margin-bottom: rem(6);
-    @extend %Inter-400;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
     font-size: rem(16);
     color: #8d8d8d;
   }
 
   &__title {
     margin-bottom: rem(10);
-    @extend %Inter-600;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+
     font-size: rem(21);
     text-transform: capitalize;
     color: #0d1b39;
+
 
     height: rem(28);
     display: -webkit-box;

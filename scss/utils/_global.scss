@@ -77,9 +77,11 @@ dd {
 }
 
 body {
-    @extend %Gilroy-400;
+    // @extend %Gilroy-400;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 400;
     font-size: rem(16);
-    line-height: 1.85;
+    line-height: 1.2;
     color: var(--black);
     overflow-x: hidden;
     min-width: 100vw;
@@ -166,6 +168,10 @@ button,
 //   background-repeat: no-repeat;
 // }
 // }
+.flex {
+    display: flex;
+    align-items: center;
+}
 
 .visually-hidden {
     position: absolute;
@@ -182,6 +188,9 @@ button,
 
 .swiper-button-right,
 .swiper-button-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--white);
     border-radius: 50%;
     width: rem(50);
@@ -190,6 +199,7 @@ button,
     position: absolute;
     top: 36%;
     overflow: visible;
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.06);
     @include transition ($transition-property: scale);
 
     @media (any-hover: hover) {
@@ -204,7 +214,7 @@ button,
 }
 
 .swiper-button-right {
-    left: rem(5);
+    left: rem(-27);
 
 }
 

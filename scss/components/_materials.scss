@@ -1,0 +1,30 @@
+.materials {
+
+  &__container {
+    max-width: 1440px;
+    padding: 0 rem(10);
+    margin: 0 auto;
+  }
+
+  &__box {
+    justify-content: space-between;
+  }
+
+  &__descr {
+    max-width: rem(556);
+  }
+
+  &__thumb {
+    // gap: rem(42);
+  }
+
+  &__thumb-row2 {
+    align-self: flex-end;
+  }
+
+  &__img {
+    &:not(:last-child) {
+      margin-bottom: rem(5);
+    }
+  }
+}

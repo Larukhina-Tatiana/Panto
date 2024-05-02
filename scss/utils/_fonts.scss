@@ -8,15 +8,16 @@
 
 // 400
 @font-face {
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Gilroy',
+        sans-serif;
     src: url(../fonts/Gilroy-Regular.woff2) format('woff2'), url(../fonts/Gilroy-Regular.woff) format('woff');
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 %Gilroy-400 {
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Gilroy';
     font-weight: 400;
 }
 
@@ -56,16 +57,16 @@
     font-display: swap;
 }
 
+
 %Gilroy-500 {
     font-family: 'Gilroy', sans-serif;
     font-weight: 500;
 }
 
-
 // 600
 @font-face {
     font-family: 'Inter', sans-serif;
-    src: url(../fonts/Inter-SemiBold.woff2) format('woff2'), url(../fonts/Inter-SemiBold.woff) format('woff');
+    src: url(../fonts/Inter-SemiBold.woff2) format('woff2'), url(../fonts/Inter-SemiBold.woff) format('woff'), url(../../fonts/Inter-SemiBold.ttf) format('ttf');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -101,6 +102,19 @@
 %Gilroy-700 {
     font-family: 'Gilroy', sans-serif;
     font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Regular.woff2) format('woff2'), url(../../fonts/Gilroy-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+%Gilroy-400 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
 }
 
 // @extend %yne-700;

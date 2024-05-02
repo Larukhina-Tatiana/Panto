@@ -1,15 +1,14 @@
 .experiences {
-  padding: rem(240) 0;
+  padding: rem(120) 0;
 
   &__box {
-    display: flex;
-    align-items: center;
     gap: rem(80);
   }
 
 
   &__description {
-    max-width: rem(556);
+    max-width: rem(579);
+    padding-right: rem(60);
   }
 
   &__title {
