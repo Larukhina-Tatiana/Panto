@@ -1,0 +1,89 @@
+.footer {
+  padding: rem(118) 0 rem(56);
+  background-color: var(--background);
+  font-size: rem(15);
+  line-height: 1.6;
+  @extend %Gilroy-500;
+
+  &__container {
+    max-width: rem(1064);
+  }
+
+  &__inner {
+    display: flex;
+    margin-bottom: rem(118);
+  }
+
+  &__logo {
+    margin-bottom: rem(30);
+  }
+
+  &__content {
+    max-width: rem(294);
+    margin-right: rem(152);
+  }
+
+  &__box-lists {
+    display: flex;
+    gap: rem(110);
+    align-items: center;
+  }
+
+  &__link {
+    color: var(--gray-8);
+    @include transition ($transition-property: color);
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--accent);
+
+        .footer__link-svg {
+          fill: var(--accent);
+        }
+      }
+    }
+
+    &-svg {
+      margin-right: rem(10);
+      @include transition ($transition-property: fill);
+    }
+
+    &-svg--facebook {
+      margin-right: rem(16);
+      margin-left: rem(5);
+    }
+  }
+
+  &__copy-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copy {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: rgba(30, 40, 51, .5);
+  }
+
+  &__title {
+    margin-bottom: rem(20);
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: rem(17);
+    letter-spacing: -0.01em;
+    color: var(--accent);
+    text-transform: capitalize;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: rem(15);
+    }
+  }
+
+  &__list-copylink {
+    display: flex;
+    gap: rem(40);
+  }
+}
