@@ -3,18 +3,20 @@
   font-size: rem(14);
   line-height: 1.85;
   color: var(--accent);
-  display: flex;
-  align-items: center;
-  gap: rem(13);
+  position: relative;
+  padding-right: rem(60);
+  width: rem(121);
 
   @include transition ($transition-property: (scale, transform));
 
   &::after {
+    position: absolute;
     content: url(../images/icons/arrow-next.svg);
     width: rem(38);
     height: rem(11);
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+
+    right: 0;
   }
 
   @media (any-hover: hover) {

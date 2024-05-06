@@ -26,27 +26,18 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow:
-      '<button class="bestproduct__button-next swiper-button-left"><svg class="bestproduct__button-svg" width="21" height="15" aria-label="icon arrow next"><use href="./images/icons/icons.svg#arrow-next-black"></use></svg></button>',
+      '<button class="swiper-button-left"><svg class="bestproduct__button-svg" width="21" height="15" aria-label="icon arrow next"><use href="./images/icons/icons.svg#arrow-next-black"></use></svg></button>',
     prevArrow:
-      '<button class="bestproduct__button-prev swiper-button-right"><svg class="bestproduct__button-svg" width="21" height="15" aria-label="icon arrow prev"><use href="./images/icons/icons.svg#arrow-prev-black"></use></svg></button>',
+      '<button class="swiper-button-right"><svg class="bestproduct__button-svg" width="21" height="15" aria-label="icon arrow prev"><use href="./images/icons/icons.svg#arrow-prev-black"></use></svg></button>',
     responsive: [
       {
-        breakpoint: 1241,
-        settings: {
-          dots: true,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 1130,
+        breakpoint: 1199,
         settings: {
           slidesToShow: 3,
-          dots: true,
-          arrows: false,
         },
       },
       {
-        breakpoint: 870,
+        breakpoint: 877,
         settings: {
           slidesToShow: 2,
           dots: true,
@@ -54,10 +45,9 @@ $(function () {
         },
       },
       {
-        breakpoint: 560,
+        breakpoint: 649,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
           dots: true,
           arrows: false,
         },
@@ -74,40 +64,22 @@ $(function () {
       '<button class="swiper-button-left"><svg class="bestproduct__button-svg" width="21" height="15" aria-label="icon arrow next"><use href="./images/icons/icons.svg#arrow-next-black"></use></svg></button>',
     prevArrow:
       '<button class="swiper-button-right"><svg class="bestproduct__button-svg" width="21" height="15" aria-label="icon arrow prev"><use href="./images/icons/icons.svg#arrow-prev-black"></use></svg></button>',
-    // responsive: [
-    //   {
-    //     breakpoint: 1241,
-    //     settings: {
-    //       dots: true,
-    //       arrows: false,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 1130,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       dots: true,
-    //       arrows: false,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 870,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       dots: true,
-    //       arrows: false,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 560,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       dots: true,
-    //       arrows: false,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 1164,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 794,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
+
 AOS.init();

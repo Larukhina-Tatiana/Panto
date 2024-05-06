@@ -1,6 +1,7 @@
 .section-title {
   @extend %Gilroy-700;
-  font-size: rem(42);
+  // font-size: rem(42);
+  font-size: clamp(1.5rem, 1.133rem + 1.84vw, 2.625rem);
   color: var(--black);
   line-height: 1.2;
   text-transform: capitalize;
