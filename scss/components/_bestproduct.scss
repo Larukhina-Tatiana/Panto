@@ -16,13 +16,12 @@
   &__list {
     max-width: rem(1230);
     margin: 0 auto clamp(1.875rem, 1.263rem + 3.06vw, 3.75rem);
-    // overflow: visible;
   }
 
   &__item {
     min-height: rem(492);
-    // outline: rem(1) solid green;
     position: relative;
+    overflow: hidden;
   }
 
   &__link {
@@ -43,17 +42,8 @@
   @media screen and (width < 876.99px) {
 
     &__slider {
-      margin-left: clamp(2rem, -4.708rem + 17.71vw, 5rem);
+      margin-left: clamp(1.56rem, calc(-0.41rem + 9.87vw), 5rem);
       // margin-left: rem(80);
-    }
-  }
-
-  @media screen and (width < 649.99px) {
-
-    &__slider {
-      // margin: 0 auto;
-      // margin-left: rem(150);
-
     }
   }
 }

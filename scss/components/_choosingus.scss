@@ -5,11 +5,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: rem(30);
   }
 
   &__title {
     width: rem(245);
-    margin-right: clamp(1.875rem, -21.313rem + 36.23vw, 8.125rem);
+    margin-right: clamp(0rem, -30.145rem + 47.1vw, 8.125rem);
   }
 
   &__list {
@@ -35,24 +36,20 @@
     }
   }
 
-  @media screen and (width < 1023.99px) {
+  @media screen and (width < 1024.99px) {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+    }
+
     &__list {
       flex-wrap: wrap;
       justify-content: center;
     }
   }
-
-  @media screen and (width < 767.99px) {
-    &__inner {
-      flex-direction: column;
-    }
-
-    &__title {
-      width: 100%;
-      margin: 0 auto rem(30) auto;
-      text-align: center;
-    }
-
-  }
-
 }
