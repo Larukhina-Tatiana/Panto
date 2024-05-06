@@ -1,5 +1,5 @@
 .footer {
-  padding: rem(118) 0 rem(56);
+  padding: clamp(3.125rem, 1.696rem + 7.14vw, 7.5rem) 0 rem(56);
   background-color: var(--background);
   font-size: rem(15);
   line-height: 1.6;
@@ -11,7 +11,7 @@
 
   &__inner {
     display: flex;
-    margin-bottom: rem(118);
+    margin-bottom: clamp(3.125rem, 1.696rem + 7.14vw, 7.5rem);
   }
 
   &__logo {
@@ -20,7 +20,8 @@
 
   &__content {
     max-width: rem(294);
-    margin-right: rem(152);
+    // margin-right: rem(152);
+    margin-right: clamp(0rem, -20.331rem + 36.71vw, 9.5rem);
   }
 
   &__box-lists {
@@ -85,5 +86,38 @@
   &__list-copylink {
     display: flex;
     gap: rem(40);
+  }
+
+  @media screen and (width < 886.99px) {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__content {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    &__box-lists {
+      gap: clamp(1.25rem, -1.93rem + 15.9vw, 6.875rem);
+    }
+  }
+
+  @media screen and (width < 485.99px) {
+
+    &__copy-list {
+      flex-wrap: wrap;
+    }
+
+    &__box-lists {
+      align-items: flex-start;
+    }
+
+    &__copy {
+      margin-bottom: rem(20);
+    }
+
   }
 }

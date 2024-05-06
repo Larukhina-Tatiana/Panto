@@ -1,5 +1,5 @@
 .choosingus {
-  padding: rem(120) 0;
+  padding: clamp(3.125rem, 1.696rem + 7.14vw, 7.5rem) 0;
 
   &__inner {
     display: flex;
@@ -8,44 +8,51 @@
   }
 
   &__title {
-    max-width: rem(245);
-    margin-right: rem(130);
+    width: rem(245);
+    margin-right: clamp(1.875rem, -21.313rem + 36.23vw, 8.125rem);
   }
 
   &__list {
     display: flex;
-    gap: rem(28);
+    gap: clamp(1.25rem, -4.75rem + 8vw, 1.75rem);
   }
 
   &__item {
-    max-width: rem(286);
+    width: rem(286);
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
-    // height: rem(180);
+
 
     &-title {
       margin-bottom: rem(20);
       @extend %Gilroy-700;
-      font-size: rem(24);
+      font-size: clamp(1.125rem, 1.003rem + 0.61vw, 1.5rem);
       color: var(--gray-9);
-      height: rem(30);
-      display: -webkit-box;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
-      text-overflow: ellipsis;
-      overflow: hidden;
     }
 
     &-text {
       margin-bottom: rem(14);
-      height: rem(90);
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      text-overflow: ellipsis;
-      overflow: hidden;
     }
+  }
+
+  @media screen and (width < 1023.99px) {
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (width < 767.99px) {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__title {
+      width: 100%;
+      margin: 0 auto rem(30) auto;
+      text-align: center;
+    }
+
   }
 
 }

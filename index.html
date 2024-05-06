@@ -10,7 +10,8 @@
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@100..900&display=swap');
   </style>
   <link rel="stylesheet" href="scss/modern-normalize.min.css">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swip?er@9/swiper-bundle.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"> -->
+  <!-- <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css"> -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="libs/slick/slick.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -18,16 +19,16 @@
 </head>
 
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <div class="container">
       <div class="header__inner">
         <a class="logo logo--white" href="./index.html">Panto</a>
         <nav class="nav">
-          <!-- <button class="nav__menu-btn">
+          <button class="nav__menu-btn">
             <span></span>
             <span></span>
             <span></span>
-          </button> -->
+          </button> 
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--flex" href="#">Furniture
@@ -58,9 +59,9 @@
         </a>
       </div>
     </div>
-  </header>
+  </header> -->
   <main class="main">
-    <section class="hero" style="background-image:
+    <!-- <section class="hero" style="background-image:
                 linear-gradient(180.00deg, rgba(255, 255, 255, 0) 86.133%, rgb(255, 255, 255) 100%),
                 -webkit-image-set(
             url(./images/hero/hero@1x.avif) type('image/avif') 1x,
@@ -104,7 +105,7 @@
           </form>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="choosingus">
       <div class="container">
         <div class="choosingus__inner">
@@ -193,7 +194,7 @@
                   </a>
                 </article>
               </li>
-              <li class="bestproduct__item">
+              <li class="bestproduct__item swiper-slide">
                 <article class="card-product">
                   <a class="card-product__link" href="">
                     <div class="card-product__thumb">
@@ -231,7 +232,7 @@
                   </a>
                 </article>
               </li>
-              <li class="bestproduct__item">
+              <li class="bestproduct__item swiper-slide">
                 <article class="card-product">
                   <a class="card-product__link" href="">
                     <div class="card-product__thumb">
@@ -269,7 +270,7 @@
                   </a>
                 </article>
               </li>
-              <li class="bestproduct__item">
+              <li class="bestproduct__item swiper-slide">
                 <article class="card-product">
                   <a class="card-product__link" href="">
                     <div class="card-product__thumb">
@@ -309,7 +310,7 @@
               </li>
 
 
-              <li class="bestproduct__item">
+              <li class="bestproduct__item swiper-slide">
                 <article class="card-product">
                   <a class="card-product__link" href="">
                     <div class="card-product__thumb">
@@ -347,7 +348,7 @@
                   </a>
                 </article>
               </li>
-              <li class="bestproduct__item">
+              <li class="bestproduct__item swiper-slide">
                 <article class="card-product">
                   <a class="card-product__link" href="">
                     <div class="card-product__thumb">
@@ -385,7 +386,7 @@
                   </a>
                 </article>
               </li>
-              <li class="bestproduct__item">
+              <li class="bestproduct__item swiper-slide">
                 <article class="card-product">
                   <a class="card-product__link" href="">
                     <div class="card-product__thumb">
@@ -423,7 +424,7 @@
                   </a>
                 </article>
               </li>
-              <li class="bestproduct__item">
+              <li class="bestproduct__item swiper-slide">
                 <article class="card-product">
                   <a class="card-product__link" href="">
                     <div class="card-product__thumb">
@@ -1417,31 +1418,32 @@
       </div>
     </section>
     <section class="materials">
-      <!-- <div class="materials__container"> -->
-      <div class="materials__box flex">
-        <div class="experiences__materials container">
-          <p class="subtitle">Materials</p>
-          <h2 class="experiences__title section-title">Very serious materials for making furniture</h2>
-          <p class="materials__descr experiences__descr">
-            Because panto was very serious about designing furniture for our environment, using a very expensive and
-            famous capital
-            but at a relatively low price
-          </p>
-          <a class="link-more" href="">More Info</a>
-        </div>
-        <div class="materials__thumb flex">
-          <div class="materials__thumb-row1">
-            <img class="materials__img" src="image/png" srcset="
+      <div class="materials__container">
+        <div class="materials__box flex">
+          <div class="experiences__materials container">
+            <p class="subtitle">Materials</p>
+            <h2 class="experiences__title section-title">Very serious materials for making furniture</h2>
+            <p class="materials__descr experiences__descr">
+              Because panto was very serious about designing furniture for our environment, using a very expensive and
+              famous capital
+              but at a relatively low price
+            </p>
+            <a class="link-more" href="">More Info</a>
+          </div>
+          <div class="materials__thumb flex">
+            <div class="materials__thumb-row1">
+              <img class="materials__img" src="image/png" srcset="
                         ./images/materials/images1@1x.png 1x,
                         ./images/materials/images1@2x.png 2x" loading="lazy" decoding="async" alt="images" />
-            <img class="materials__img" src="image/png" srcset="
+              <img class="materials__img" src="image/png" srcset="
                         ./images/materials/images2@1x.png 1x,
                         ./images/materials/images2@2x.png 2x" loading="lazy" decoding="async" alt="images" />
-          </div>
-          <div class="materials__thumb-row2">
-            <img src="image/png" srcset="
+            </div>
+            <div class="materials__thumb-row2">
+              <img src="image/png" srcset="
                         ./images/materials/images3@1x.png 1x,
                         ./images/materials/images3@2x.png 2x" loading="lazy" decoding="async" alt="images" />
+            </div>
           </div>
         </div>
       </div>
@@ -1450,226 +1452,214 @@
       <p class="subtitle">Testimonials</p>
       <h2 class="testimonials__title section-title">Our Client Reviews</h2>
       <ul class="testimonials__list">
-        <li class="testimonials__item" style="background-image:
- -webkit-image-set( 
-          url(./images/testimonial/unsplash1@1x.avif) type('image/avif') 1x,
-          url(./images/testimonial/unsplash1@2x.avif) type('image/avif') 2x,
-          url(./images/testimonial/unsplash1@1x.webp) type('image/webp') 1x,
-          url(./images/testimonial/unsplash1@2x.webp) type('image/webp') 2x,
-          url(./images/testimonial/unsplash1@1x.jpg) 1x,
-          url(./images/testimonial/unsplash1@3x.jpg) 2x)">
-          <div class="testimonials__item-content">
-            <img src="image/png" srcset="
+        <li class="testimonials__item">
+          <div class="testimonials__thumb" style="background-image:
+        -webkit-image-set( 
+                  url(./images/testimonial/unsplash-1@1x.png) 1x,
+                  url(./images/testimonial/unsplash-1@2x.png) 2x)">
+            <div class="testimonials__item-content">
+              <img src="image/png" srcset="
                         ./images/testimonial/avatar1@1x.png 1x,
                         ./images/testimonial/avatar1@2x.png 2x" loading="lazy" decoding="async" alt="images" />
-            <blockquote class="testimonials__comment">
-              <cite class="testimonials__comment-name">Bang Upin<span>Pedagang Asongan</span></cite>
-              <p class="testimonials__comment-text">
-                “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
-              </p>
-            </blockquote>
-            <ul class="rating">
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star-opacity.svg" alt="icon star-opasity">
-              </li>
-            </ul>
+              <blockquote class="testimonials__comment">
+                <cite class="testimonials__comment-name">Bang Upin<span>Pedagang Asongan</span></cite>
+                <p class="testimonials__comment-text">
+                  “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
+                </p>
+              </blockquote>
+              <ul class="rating">
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star-opacity.svg" alt="icon star-opasity">
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
-        <li class="testimonials__item" style="background-image:
-         -webkit-image-set( 
-                  url(./images/testimonial/unsplash2@1x.avif) type('image/avif') 1x,
-                  url(./images/testimonial/unsplash2@2x.avif) type('image/avif') 2x,
-                  url(./images/testimonial/unsplash2@1x.webp) type('image/webp') 1x,
-                  url(./images/testimonial/unsplash2@2x.webp) type('image/webp') 2x,
-                  url(./images/testimonial/unsplash2@1x.jpg) 1x,
-                  url(./images/testimonial/unsplash2@3x.jpg) 2x)">
-          <div class="testimonials__item-content">
-            <img src="image/png" srcset="
+        <li class="testimonials__item">
+          <div class="testimonials__thumb" style="background-image:
+        -webkit-image-set( 
+                  url(./images/testimonial/unsplash-2@1x.png) 1x,
+                  url(./images/testimonial/unsplash-2@2x.png) 2x)">
+            <div class="testimonials__item-content">
+              <img src="image/png" srcset="
                         ./images/testimonial/avatar2@1x.png 1x,
                         ./images/testimonial/avatar2@2x.png 2x" loading="lazy" decoding="async" alt="images" />
-            <blockquote class="testimonials__comment">
-              <cite class="testimonials__comment-name">Ibuk Sukijan<span>Ibu Rumah Tangga</span></cite>
-              <p class="testimonials__comment-text">
-                “Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“
-              </p>
-            </blockquote>
-            <ul class="rating">
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star-opacity.svg" alt="icon star-opasity">
-              </li>
-            </ul>
+              <blockquote class="testimonials__comment">
+                <cite class="testimonials__comment-name">Ibuk Sukijan<span>Ibu Rumah Tangga</span></cite>
+                <p class="testimonials__comment-text">
+                  “Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“
+                </p>
+              </blockquote>
+              <ul class="rating">
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star-opacity.svg" alt="icon star-opasity">
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
-        <li class="testimonials__item" style="background-image:
-         -webkit-image-set( 
-                  url(./images/testimonial/unsplash3@1x.avif) type('image/avif') 1x,
-                  url(./images/testimonial/unsplash3@2x.avif) type('image/avif') 2x,
-                  url(./images/testimonial/unsplash3@1x.webp) type('image/webp') 1x,
-                  url(./images/testimonial/unsplash3@2x.webp) type('image/webp') 2x,
-                  url(./images/testimonial/unsplash3@1x.jpg) 1x,
-                  url(./images/testimonial/unsplash3@3x.jpg) 2x)">
-          <div class="testimonials__item-content">
-            <img src="image/png" srcset="
+        <li class="testimonials__item">
+          <div class="testimonials__thumb" style="background-image:
+        -webkit-image-set( 
+                  url(./images/testimonial/unsplash-3@1x.png) 1x,
+                  url(./images/testimonial/unsplash-3@2x.png) 2x)">
+            <div class="testimonials__item-content">
+              <img src="image/png" srcset="
                         ./images/testimonial/avatar3@1x.png 1x,
                         ./images/testimonial/avatar3@2x.png 2x" loading="lazy" decoding="async" alt="images" />
-            <blockquote class="testimonials__comment">
-              <cite class="testimonials__comment-name">Mpok Ina<span>Karyawan Swasta</span></cite>
-              <p class="testimonials__comment-text">
-                “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
-              </p>
-            </blockquote>
-            <ul class="rating">
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star-opacity.svg" alt="icon star-opasity">
-              </li>
-            </ul>
+              <blockquote class="testimonials__comment">
+                <cite class="testimonials__comment-name">Mpok Ina<span>Karyawan Swasta</span></cite>
+                <p class="testimonials__comment-text">
+                  “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
+                </p>
+              </blockquote>
+              <ul class="rating">
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star-opacity.svg" alt="icon star-opasity">
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
-        <li class="testimonials__item" style="background-image:
-         -webkit-image-set( 
-                  url(./images/testimonial/unsplash1@1x.avif) type('image/avif') 1x,
-                  url(./images/testimonial/unsplash1@2x.avif) type('image/avif') 2x,
-                  url(./images/testimonial/unsplash1@1x.webp) type('image/webp') 1x,
-                  url(./images/testimonial/unsplash1@2x.webp) type('image/webp') 2x,
-                  url(./images/testimonial/unsplash1@1x.jpg) 1x,
-                  url(./images/testimonial/unsplash1@3x.jpg) 2x)">
-          <div class="testimonials__item-content">
-            <img src="image/png" srcset="
+        <li class="testimonials__item">
+          <div class="testimonials__thumb" style="background-image:
+                -webkit-image-set( 
+                          url(./images/testimonial/unsplash-1@1x.png) 1x,
+                          url(./images/testimonial/unsplash-1@2x.png) 2x)">
+            <div class="testimonials__item-content">
+              <img src="image/png" srcset="
                                 ./images/testimonial/avatar1@1x.png 1x,
                                 ./images/testimonial/avatar1@2x.png 2x" loading="lazy" decoding="async" alt="images" />
-            <blockquote class="testimonials__comment">
-              <cite class="testimonials__comment-name">Bang Upin<span>Pedagang Asongan</span></cite>
-              <p class="testimonials__comment-text">
-                “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
-              </p>
-            </blockquote>
-            <ul class="rating">
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star-opacity.svg" alt="icon star-opasity">
-              </li>
-            </ul>
+              <blockquote class="testimonials__comment">
+                <cite class="testimonials__comment-name">Bang Upin<span>Pedagang Asongan</span></cite>
+                <p class="testimonials__comment-text">
+                  “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
+                </p>
+              </blockquote>
+              <ul class="rating">
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star-opacity.svg" alt="icon star-opasity">
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
-        <li class="testimonials__item" style="background-image:
-                 -webkit-image-set( 
-                          url(./images/testimonial/unsplash2@1x.avif) type('image/avif') 1x,
-                          url(./images/testimonial/unsplash2@2x.avif) type('image/avif') 2x,
-                          url(./images/testimonial/unsplash2@1x.webp) type('image/webp') 1x,
-                          url(./images/testimonial/unsplash2@2x.webp) type('image/webp') 2x,
-                          url(./images/testimonial/unsplash2@1x.jpg) 1x,
-                          url(./images/testimonial/unsplash2@3x.jpg) 2x)">
-          <div class="testimonials__item-content">
-            <img src="image/png" srcset="
+        <li class="testimonials__item">
+          <div class="testimonials__thumb" style="background-image:
+                -webkit-image-set( 
+                          url(./images/testimonial/unsplash-2@1x.png) 1x,
+                          url(./images/testimonial/unsplash-2@2x.png) 2x)">
+            <div class="testimonials__item-content">
+              <img src="image/png" srcset="
                                 ./images/testimonial/avatar2@1x.png 1x,
                                 ./images/testimonial/avatar2@2x.png 2x" loading="lazy" decoding="async" alt="images" />
-            <blockquote class="testimonials__comment">
-              <cite class="testimonials__comment-name">Ibuk Sukijan<span>Ibu Rumah Tangga</span></cite>
-              <p class="testimonials__comment-text">
-                “Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“
-              </p>
-            </blockquote>
-            <ul class="rating">
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star-opacity.svg" alt="icon star-opasity">
-              </li>
-            </ul>
+              <blockquote class="testimonials__comment">
+                <cite class="testimonials__comment-name">Ibuk Sukijan<span>Ibu Rumah Tangga</span></cite>
+                <p class="testimonials__comment-text">
+                  “Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“
+                </p>
+              </blockquote>
+              <ul class="rating">
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star-opacity.svg" alt="icon star-opasity">
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
-        <li class="testimonials__item" style="background-image:
-                 -webkit-image-set( 
-                          url(./images/testimonial/unsplash3@1x.avif) type('image/avif') 1x,
-                          url(./images/testimonial/unsplash3@2x.avif) type('image/avif') 2x,
-                          url(./images/testimonial/unsplash3@1x.webp) type('image/webp') 1x,
-                          url(./images/testimonial/unsplash3@2x.webp) type('image/webp') 2x,
-                          url(./images/testimonial/unsplash3@1x.jpg) 1x,
-                          url(./images/testimonial/unsplash3@3x.jpg) 2x)">
-          <div class="testimonials__item-content">
-            <img src="image/png" srcset="
+        <li class="testimonials__item">
+          <div class="testimonials__thumb" style="background-image:
+                -webkit-image-set( 
+                          url(./images/testimonial/unsplash-3@1x.png) 1x,
+                          url(./images/testimonial/unsplash-3@2x.png) 2x)">
+            <div class="testimonials__item-content">
+              <img src="image/png" srcset="
                                 ./images/testimonial/avatar3@1x.png 1x,
                                 ./images/testimonial/avatar3@2x.png 2x" loading="lazy" decoding="async" alt="images" />
-            <blockquote class="testimonials__comment">
-              <cite class="testimonials__comment-name">Mpok Ina<span>Karyawan Swasta</span></cite>
-              <p class="testimonials__comment-text">
-                “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
-              </p>
-            </blockquote>
-            <ul class="rating">
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star.svg" alt="icon star">
-              </li>
-              <li class="rating__item">
-                <img src="./images/icons/star-opacity.svg" alt="icon star-opasity">
-              </li>
-            </ul>
+              <blockquote class="testimonials__comment">
+                <cite class="testimonials__comment-name">Mpok Ina<span>Karyawan Swasta</span></cite>
+                <p class="testimonials__comment-text">
+                  “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
+                </p>
+              </blockquote>
+              <ul class="rating">
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star.svg" alt="icon star">
+                </li>
+                <li class="rating__item">
+                  <img src="./images/icons/star-opacity.svg" alt="icon star-opasity">
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
       </ul>
@@ -1765,7 +1755,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- <script src="libs/mixitup-v3/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script> -->
-  <!-- <script src="js/swiper-bundle.min.js"></script> -->
+  <!-- <script src="./libs/swiper/swiper-bundle.min.js"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
   <script src="libs/slick/slick.min.js"></script>

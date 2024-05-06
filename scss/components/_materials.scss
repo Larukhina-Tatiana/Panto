@@ -6,8 +6,13 @@
     margin: 0 auto;
   }
 
+  & img {
+    max-width: 100%;
+  }
+
   &__box {
     justify-content: space-between;
+    gap: rem(50);
   }
 
   &__descr {
@@ -25,6 +30,30 @@
   &__img {
     &:not(:last-child) {
       margin-bottom: rem(5);
+    }
+  }
+
+  @media screen and (width < 993.99px) {
+    &__box {
+      flex-wrap: wrap;
+    }
+
+    &__thumb {
+      justify-content: center;
+      order: -1;
+    }
+  }
+
+  @media screen and (width < 773.99px) {
+
+    &__thumb {
+      flex-wrap: wrap;
+    }
+
+    &__thumb-row1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }

@@ -2,11 +2,12 @@
   width: rem(268);
   background: var(--white);
   position: absolute;
-  bottom: 0;
+  bottom: rem(2);
   // height: rem(441);
   border-radius: 20px;
   text-align: left;
   height: auto;
+  margin-left: rem(7);
 
   &__link {
     border-radius: 20px;
@@ -23,10 +24,9 @@
     border-top-left-radius: rem(20);
     border-top-right-radius: rem(20);
     background-color: var(--background);
-    width: rem(268);
+    width: 100%;
     height: rem(240);
     position: relative;
-    // outline: rem(1) solid rebeccapurple;
     // @include transition ($transition-property: scale);
 
     // @media (any-hover: hover) {
@@ -34,15 +34,13 @@
     //     scale: 1.1;
     //   }
     // }
-
   }
 
   &__img {
     position: absolute;
-    bottom: rem(18);
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    // outline: rem(1) solid gold;
   }
 
   &__body {
@@ -126,5 +124,9 @@
         scale: 1.2
       }
     }
+  }
+
+  @media screen and (width < 649.99px) {
+    width: auto;
   }
 }

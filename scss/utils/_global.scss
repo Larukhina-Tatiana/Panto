@@ -77,7 +77,6 @@ dd {
 }
 
 body {
-    // @extend %Gilroy-400;
     font-family: "Gilroy", sans-serif;
     font-weight: 400;
     font-size: rem(16);
@@ -211,13 +210,28 @@ button,
             }
         }
     }
+
+    @media screen and (width < 1023.99px) {
+        top: rem(-54);
+    }
 }
 
 .swiper-button-right {
-    left: rem(-27);
+    left: -1.5%;
 
+    @media screen and (width < 1023.99px) {
+        left: 40%;
+    }
 }
 
 .swiper-button-left {
-    right: rem(4);
+    right: .4%;
+
+    @media screen and (width < 1199.99px) {
+        right: rem(40);
+    }
+
+    @media screen and (width < 1023.99px) {
+        right: 40%;
+    }
 }

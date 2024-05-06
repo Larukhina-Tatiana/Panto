@@ -1,5 +1,5 @@
 .testimonials {
-  padding: rem(120) 0;
+  padding: clamp(3.125rem, 1.696rem + 7.14vw, 7.5rem) 0;
   text-align: center;
 
   &__title {
@@ -12,8 +12,9 @@
   }
 
   &__item {
+    position: relative;
     width: rem(370);
-    min-height: rem(506);
+    min-height: rem(476);
 
     &:not(:first-child) {
       margin-left: rem(19);
@@ -22,47 +23,29 @@
     &:not(:last-child) {
       margin-right: rem(19);
     }
+  }
 
-    // background-image: url(../images/testimonial/testimonials-bg1@1x.png);
+
+  &__thumb {
+    position: absolute;
+    inset: 0;
+    // width: rem(334);
+    width: 100%;
+    height: 100%;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-    outline: rem(1) solid red;
-
-
-    &::after {
-      content: '';
-      width: rem(300);
-      height: rem(380);
-      border-radius: rem(45);
-
-      background: url(../images/testimonial/unsplash-1@1x.png);
-      filter: blur(50px);
-      opacity: 0.4;
-
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+    background-size: auto;
+    border-radius: rem(20);
   }
 
   &__item-content {
     position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: rem(334);
+    bottom: 4%;
     width: 100%;
     height: rem(240);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../images/testimonial/testimonials-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   &__comment-name {
@@ -87,9 +70,8 @@
   &__comment-text {
     margin-bottom: rem(22);
     max-width: rem(252);
+    min-height: rem(51);
     @extend %Gilroy-400;
-    // font-family: "Gilroy", sans-serif;
-    // font-weight: 400;
     font-size: rem(14);
     color: rgba(30, 30, 30, .8);
   }
@@ -99,11 +81,22 @@
   }
 
   & .swiper-button-right,
-  & .swiper-button-right {
+  & .swiper-button-left {
     top: 30%;
   }
 
   & .swiper-button-right {
     left: rem(-28);
+  }
+
+
+  @media screen and (width < 1219.99px) {
+    &__list {
+      margin-left: rem(30);
+    }
+
+    & .swiper-button-left {
+      right: 1%;
+    }
   }
 }
