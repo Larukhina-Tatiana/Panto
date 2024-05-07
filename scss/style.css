@@ -236,11 +236,6 @@ button,
   font-style: normal;
   font-display: swap;
 }
-.subtitle {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-}
-
 @font-face {
   font-family: "Gilroy";
   src: url(../fonts/Gilroy-Bold.woff2) format("woff2"), url(../fonts/Gilroy-Bold.woff) format("woff");
@@ -578,6 +573,8 @@ button,
 }
 
 .subtitle {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
   font-size: 1.125rem;
   letter-spacing: 0.17em;
   text-transform: uppercase;
@@ -621,10 +618,11 @@ button,
 }
 .bestproduct__slider {
   margin-left: 1.25rem;
+  margin-bottom: clamp(1.875rem, 1.263rem + 3.06vw, 3.75rem);
 }
 .bestproduct__list {
   max-width: 76.875rem;
-  margin: 0 auto clamp(1.875rem, 1.263rem + 3.06vw, 3.75rem);
+  margin: 0 auto;
 }
 .bestproduct__item {
   min-height: 30.75rem;
@@ -771,11 +769,6 @@ button,
 .card-product__rating {
   margin-bottom: 2.375rem;
 }
-.card-product__price-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .card-product__price {
   display: inline-block;
   font-size: 1.3125rem;
@@ -786,11 +779,13 @@ button,
   font-size: 0.9375rem;
 }
 .card-product__btnbasket {
+  position: absolute;
+  bottom: 4.5%;
+  right: 7%;
   width: 3.0625rem;
   height: 3.0625rem;
   border-radius: 50%;
   background-color: #0d1b39;
-  position: relative;
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

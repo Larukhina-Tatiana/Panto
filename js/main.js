@@ -1,8 +1,4 @@
-// var mixer = mixitup(".bestproduct__inner", {
-//   load: {
-//     filter: ".chair",
-//   },
-// });
+AOS.init();
 
 $(".nav__menu-btn").on("click", function () {
   $(".nav__menu-btn").toggleClass("menu--open");
@@ -88,5 +84,3 @@ $(function () {
     ],
   });
 });
-
-AOS.init();

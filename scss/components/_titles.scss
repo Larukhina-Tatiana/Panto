@@ -8,7 +8,8 @@
 }
 
 .subtitle {
-  @extend %Gilroy-600;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
   font-size: rem(18);
   letter-spacing: 0.17em;
   text-transform: uppercase;

@@ -80,12 +80,6 @@
     margin-bottom: rem(38);
   }
 
-  &__price-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   &__price {
     display: inline-block;
     @extend %Inter-600;
@@ -100,11 +94,13 @@
 
 
   &__btnbasket {
+    position: absolute;
+    bottom: 4.5%;
+    right: 7%;
     width: rem(49);
     height: rem(49);
     border-radius: 50%;
     background-color: #0d1b39;
-    position: relative;
 
     &::before {
       position: absolute;

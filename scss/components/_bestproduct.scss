@@ -10,12 +10,13 @@
 
   &__slider {
     margin-left: rem(20);
+    margin-bottom: clamp(1.875rem, 1.263rem + 3.06vw, 3.75rem);
   }
 
 
   &__list {
     max-width: rem(1230);
-    margin: 0 auto clamp(1.875rem, 1.263rem + 3.06vw, 3.75rem);
+    margin: 0 auto;
   }
 
   &__item {
