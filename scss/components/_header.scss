@@ -1,19 +1,12 @@
 .header {
   position: relative;
   z-index: 4;
-  padding-top: rem(30);
+  padding-top: clamp(0.313rem, -0.198rem + 2.55vw, 1.875rem);
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  &__container {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 10px;
-    outline: 1px solid brown;
   }
 
   &__basket {

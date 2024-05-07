@@ -269,24 +269,17 @@ button,
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 10px;
-  outline: 1px solid brown;
 }
 
 .header {
   position: relative;
   z-index: 4;
-  padding-top: 1.875rem;
+  padding-top: clamp(0.313rem, -0.198rem + 2.55vw, 1.875rem);
 }
 .header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.header__container {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 10px;
-  outline: 1px solid brown;
 }
 .header__basket {
   position: relative;
