@@ -7,48 +7,35 @@
 // }
 
 // 400
-@font-face {
-    font-family: 'Gilroy',
-        sans-serif;
-    src: url(../fonts/Gilroy-Regular.woff2) format('woff2'), url(../fonts/Gilroy-Regular.woff) format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
 
-%Gilroy-400 {
-    font-family: 'Gilroy';
-    font-weight: 400;
-}
 
-@font-face {
-    font-family: 'Inter', sans-serif;
-    src: url(../fonts/Inter-Regular.woff2) format('woff2'), url(../fonts/Inter-Regular.woff) format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: 'Inter', sans-serif;
+//     src: url(../fonts/Inter-Regular.woff2) format('woff2'), url(../fonts/Inter-Regular.woff) format('woff');
+//     font-weight: 400;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
-%Inter-400 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-}
+// %Inter-400 {
+//     font-family: 'Inter', sans-serif;
+//     font-weight: 400;
+// }
 
-@font-face {
-    font-family: 'DMSans', sans-serif;
-    src: url(../fonts/DMSans-Regular.woff2) format('woff2'), url(../fonts/DMSans-Regular.woff) format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: 'DMSans', sans-serif;
+//     src: url(../fonts/DMSans-Regular.woff2) format('woff2'), url(../fonts/DMSans-Regular.woff) format('woff');
+//     font-weight: 400;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
-%DMSans-400 {
-    font-family: 'DMSans', sans-serif;
-    font-weight: 400;
-}
+// %DMSans-400 {
+//     font-family: 'DMSans', sans-serif;
+//     font-weight: 400;
+// }
 
 // 500
-
 @font-face {
     font-family: 'Gilroy';
     src: url(../fonts/Gilroy-Medium.woff2) format('woff2'), url(../fonts/Gilroy-Medium.woff) format('woff');
