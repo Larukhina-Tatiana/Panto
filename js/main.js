@@ -4,6 +4,13 @@
 //   },
 // });
 
+$(".nav__menu-btn").on("click", function () {
+  $(".nav__menu-btn").toggleClass("menu--open");
+});
+$(".nav__menu-btn").on("click", function () {
+  $(".nav__list").toggleClass("menu--open");
+});
+
 // ! Tabs
 $(".tabs__link").on("click", function (e) {
   e.preventDefault();

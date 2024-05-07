@@ -15,7 +15,7 @@
     padding-top: rem(140);
     max-width: rem(890);
     @extend %Gilroy-700;
-    font-size: rem(80);
+    font-size: clamp(1.75rem, calc(0.69rem + 5.31vw), 5rem);
     line-height: 1.3;
     letter-spacing: -0.01em;
     text-transform: capitalize;
@@ -27,7 +27,7 @@
     display: inline-block;
     max-width: rem(606);
     @extend %Gilroy-400;
-    font-size: rem(24);
+    font-size: clamp(1.13rem, calc(1rem + 0.61vw), 1.5rem);
     line-height: 1.6;
     color: var(--white-rgba);
   }
@@ -62,66 +62,10 @@
 
     & span {
       position: absolute;
-      // color: transparent;
-
-      // font-size: rem(0);
+      color: transparent;
+      top: 50%;
+      transform: translateY(-50%);
       z-index: 5;
-    }
-
-    // @media (any-hover: hover) {
-    //   &:hover {
-    //     transform: rotate(-180deg);
-    //   }
-    // }
-
-    // &::after {
-    //   position: absolute;
-    //   content: '';
-    //   width: rem(10);
-    //   height: rem(10);
-    //   top: 0;
-    //   left: 0;
-    //   border-radius: 50%;
-    //   background-color: var(--white);
-    // }
-
-    // &::before {
-    //   position: absolute;
-    //   content: '';
-    //   width: 100%;
-    //   height: 100%;
-    //   top: 0;
-    //   left: 0;
-    //   border-radius: 50%;
-    //   fill: rgba(255, 255, 255, 0.2);
-    //   stroke-width: 0.86px;
-    //   stroke: rgba(255, 255, 255, 0.6);
-    //   backdrop-filter: blur(8px);
-    //   border: .5px solid var(--white);
-    // }
-
-    // &::after,
-    // &::before {
-    //   position: absolute;
-    //   content: '';
-    //   width: 100%;
-    //   height: 100%;
-    //   top: 0;
-    //   left: 0;
-    //   border-radius: 50%;
-    // fill: rgba(255, 255, 255, 0.2);
-    // stroke-width: 0.86px;
-    // stroke: rgba(255, 255, 255, 0.6);
-    // backdrop-filter: blur(8px);
-
-
-    // border-radius: 50%;
-    // background-color: var(--accent);
-    // }
-
-    &::after {
-      // opacity: 0.5;
-      // transform: scale(1.6);
     }
 
     &--1 {
@@ -130,13 +74,19 @@
     }
 
     &--2 {
-      top: 74%;
-      right: 42.5%;
+      top: 73%;
+      right: 43.5%;
     }
 
     &--3 {
-      bottom: 23%;
-      right: 7.3%;
+      bottom: 11%;
+      right: 0.3%;
+    }
+  }
+
+  @media screen and (width < 1024.99px) {
+    &__tips {
+      display: none;
     }
   }
 }

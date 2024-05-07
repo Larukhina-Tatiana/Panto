@@ -1,5 +1,9 @@
 .nav {
 
+  &__menu-btn {
+    display: none;
+  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -30,6 +34,72 @@
       display: flex;
       align-items: center;
       gap: rem(10);
+    }
+  }
+
+  @media screen and (width < 769.99px) {
+
+    &__list {
+      display: none;
+      animation: opac 0.57s;
+    }
+
+    @keyframes opac {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    &__menu-btn {
+      display: block;
+      cursor: pointer;
+      width: rem(55);
+      padding: rem(10);
+      background-color: var(--gray-9);
+      border-radius: rem(5);
+      border: 1px solid var(--accent);
+      line-height: 0;
+
+      &-line {
+        display: inline-block;
+        width: 100%;
+        height: rem(5);
+        background-color: var(--accent);
+        border-radius: rem(3);
+
+        &:not(:last-child) {
+          margin-bottom: rem(5);
+        }
+      }
+
+      @media (any-hover: hover) {
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+
+    &__list.menu--open {
+      position: absolute;
+      display: block;
+      padding: rem(15);
+      background-color: var(--black);
+      border: rem(1) solid var(--accent);
+      border-radius: rem(5);
+      z-index: 12;
+      top: 105%;
+      right: 0;
+      left: 0;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: rem(30);
+      }
     }
   }
 }

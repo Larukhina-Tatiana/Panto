@@ -317,6 +317,9 @@ button,
   color: var(--black);
 }
 
+.nav__menu-btn {
+  display: none;
+}
 .nav__list {
   display: flex;
   align-items: center;
@@ -343,6 +346,62 @@ button,
   align-items: center;
   gap: 0.625rem;
 }
+@media screen and (width < 769.99px) {
+  .nav__list {
+    display: none;
+    animation: opac 0.57s;
+  }
+  @keyframes opac {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .nav__menu-btn {
+    display: block;
+    cursor: pointer;
+    width: 3.4375rem;
+    padding: 0.625rem;
+    background-color: var(--gray-9);
+    border-radius: 0.3125rem;
+    border: 1px solid var(--accent);
+    line-height: 0;
+  }
+  .nav__menu-btn-line {
+    display: inline-block;
+    width: 100%;
+    height: 0.3125rem;
+    background-color: var(--accent);
+    border-radius: 0.1875rem;
+  }
+  .nav__menu-btn-line:not(:last-child) {
+    margin-bottom: 0.3125rem;
+  }
+}
+@media screen and (width < 769.99px) and (any-hover: hover) {
+  .nav__menu-btn:hover {
+    scale: 1.1;
+  }
+}
+@media screen and (width < 769.99px) {
+  .nav__list.menu--open {
+    position: absolute;
+    display: block;
+    padding: 0.9375rem;
+    background-color: var(--black);
+    border: 0.0625rem solid var(--accent);
+    border-radius: 0.3125rem;
+    z-index: 12;
+    top: 105%;
+    right: 0;
+    left: 0;
+  }
+  .nav__item:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+}
 
 .hero {
   position: relative;
@@ -360,7 +419,7 @@ button,
   margin-bottom: 1.875rem;
   padding-top: 8.75rem;
   max-width: 55.625rem;
-  font-size: 5rem;
+  font-size: clamp(1.75rem, 0.69rem + 5.31vw, 5rem);
   line-height: 1.3;
   letter-spacing: -0.01em;
   text-transform: capitalize;
@@ -370,7 +429,7 @@ button,
   margin-bottom: 1.875rem;
   display: inline-block;
   max-width: 37.875rem;
-  font-size: 1.5rem;
+  font-size: clamp(1.13rem, 1rem + 0.61vw, 1.5rem);
   line-height: 1.6;
   color: var(--white-rgba);
 }
@@ -398,6 +457,9 @@ button,
 }
 .hero__tip span {
   position: absolute;
+  color: transparent;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 5;
 }
 .hero__tip--1 {
@@ -405,12 +467,17 @@ button,
   left: 7%;
 }
 .hero__tip--2 {
-  top: 74%;
-  right: 42.5%;
+  top: 73%;
+  right: 43.5%;
 }
 .hero__tip--3 {
-  bottom: 23%;
-  right: 7.3%;
+  bottom: 11%;
+  right: 0.3%;
+}
+@media screen and (width < 1024.99px) {
+  .hero__tips {
+    display: none;
+  }
 }
 
 .search {
@@ -577,7 +644,7 @@ button,
   line-height: 1.85;
   width: 7.75rem;
 }
-@media screen and (width < 1199.99px) {
+@media screen and (width < 1120.99px) {
   .bestproduct__slider {
     margin-left: clamp(0.313rem, -7.102rem + 13.64vw, 3.125rem);
   }
